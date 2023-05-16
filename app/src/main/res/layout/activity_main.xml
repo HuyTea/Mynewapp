@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Veribtn"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        />
+
+    <Button
+        android:id="@+id/Signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignOut"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/Verifymail"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:hint="Email not verified"
+        android:textSize="25dp"
+        android:visibility="gone"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/Veribtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERIFY NOW"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Verifymail"/>
+    <TextView
+        android:id="@+id/Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your Profile"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        />
+    <TextView
+        android:id="@+id/Yourname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Your name"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Profile"
+        />
+    <TextView
+        android:id="@+id/Youremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Your email"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Yourname"
+        />
+    <TextView
+        android:id="@+id/Yourphonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Your Number"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Youremail"
+        />
+    <Button
+        android:id="@+id/Show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show profile"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/Signout"/>
+
+
+</RelativeLayout>
